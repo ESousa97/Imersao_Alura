@@ -73,6 +73,8 @@ section button:hover {
 .item-resultado {
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
+    width: 80%; /* Largura máxima da caixa de resultados */
+    height: 16vh; /* Altura máxima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
@@ -99,6 +101,53 @@ section button:hover {
 .descricao-meta {
     color: #45474B; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex;
+    gap: 1.5rem; /* Espaçamento entre os itens da lista */
+    justify-content: center; /* Centraliza os itens */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo dos links (botões) de redes sociais */
+nav a {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.0rem; /* Espaçamento interno */
+    border-radius: 0.5rem; /* Borda arredondada */
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.0rem;
+    font-weight: 600;
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: background-color 0.3s ease; /* Suaviza a transição no hover */
+    color: white;
+}
+
+.github-btn {
+    background-color: #333333; /* Cor de fundo do botão do GitHub */
+}
+
+.linkedin-btn {
+    background-color: #0077B5; /* Cor de fundo do botão do LinkedIn */
+}
+
+/* Ícones */
+.icon {
+    width: 14px; /* Tamanho do ícone */
+    height: 14px;
+    margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Efeito hover */
+.github-btn:hover {
+    background-color: #555555; /* Cor ao passar o mouse no botão do GitHub */
+}
+
+.linkedin-btn:hover {
+    background-color: #005983; /* Cor ao passar o mouse no botão do LinkedIn */
 }
 
 /* Estiliza o rodapé da página */
@@ -164,3 +213,4 @@ footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
+

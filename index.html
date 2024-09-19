@@ -8,21 +8,40 @@
 </head>
 <body>
     <header>
-        <h1>Comandos Windows</h1>
+        <h1>Prompt de Comando Windows</h1>
     </header>
     <main>
         <section>
-        <input type="text" placeholder="Digite o deseja fazer">
-        <button>Pesquisar</button>
+            <input type="text" placeholder="Digite o comando" id="search-query" oninput="pesquisar()">
+            <button onclick="pesquisar()">Pesquisar</button>
         </section>
-        <section>
-            <h2>
-                Desenvolvida para lhe ajudar no seu dia a dia.
-            </h2>
+        
+        <!-- Seção de Resultados -->
+        <section id="resultados-pesquisa" class="resultados-pesquisa">
+            <!-- Os resultados da pesquisa serão inseridos aqui -->
         </section>
     </main>
+    <section>
+    <!-- Navegação para perfis de redes sociais -->
+    <nav aria-label="Perfis de redes sociais">
+        <ul style="list-style: none; display: flex; gap: 1rem; justify-content: center;">
+            <li>
+                <a href="https://github.com/ESousa97" target="_blank" class="github-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="icon" aria-label="Perfil do GitHub"> GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/enoque-sousa-bb89aa168/" target="_blank" class="linkedin-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon" aria-label="Perfil do LinkedIn"> LinkedIn
+                </a>
+            </li>
+        </ul>
+    </nav> 
     <footer>
         <p>2024 - Comandos do Windows. Todos os direitos reservados.</p>
     </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.5.3/fuse.min.js"></script>
 </body>
 </html>
